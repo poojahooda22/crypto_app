@@ -1,7 +1,7 @@
 import React from 'react';
-import { CryptoDetail, Transaction } from "./screens";
 import { createStackNavigator } from "@react-navigation/stack";
 import { NavigationContainer } from '@react-navigation/native';
+// import Home from '../screens/Home';
 
 import Tabs from "./navigation/tabs";
 
@@ -10,17 +10,12 @@ const Stack = createStackNavigator();
 const App = () => {
   return (
     <NavigationContainer>
-    <Stack.Navigator
-        screenOptions={{
-          headerShown: false
-        }}
-        initialRouteName={'Home'}
-      >
+    
         <Stack.Screen
           name="Home"
           component={Tabs}
         />
-      </Stack.Navigator>
+      
     </NavigationContainer>
   )
 }
