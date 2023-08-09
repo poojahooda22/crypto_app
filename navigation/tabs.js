@@ -146,7 +146,7 @@ const Tabs = () => {
                 }}
             />
             <Tab.Screen
-                name="Home"
+                name="Settings"
                 component={Home}
                 options={{
                     tabBarIcon: ({focused}) => (
@@ -171,3 +171,5 @@ const Tabs = () => {
         </Tab.Navigator>
     )
 }
+
+export default Tabs;
