@@ -60,7 +60,7 @@ const TransactionHistory = ({customContainerStyle, history}) => {
             <Text style={{...FONTS.h2}}>Transaction History</Text>
             <FlatList
                 contentContainerStyle={{marginTop: SIZES.radius}}
-                scrollEnabled={fasle}
+                scrollEnabled={false}
                 data={history}
                 keyExtractor={item => `${item.id}`}
                 renderItem = {renderItem}
