@@ -35,11 +35,28 @@ const HeaderBar = ({right}) => {
                             tintColor: COLORS.gray
                         }}
                     />
-                    <Text></Text>
+                    <Text style={{marginLeft: SIZES.base, ...FONTS.h2}}>
+                        Back
+                    </Text>
                 </TouchableOpacity>
             </View>
-            <View></View>
+            
+            {right && 
+            <View style={{flex: 1, alignItems: 'flex-end'}}>
+                <TouchableOpacity>
+                    <Image
+                        source={icons.star}
+                        resizeMode="contain"
+                        style={{
+                            width: 30,
+                            height: 30
+                        }}
+                    />
+                </TouchableOpacity>
+            </View>
+            }
 
         </View>
     )
 }
+export default HeaderBar;
