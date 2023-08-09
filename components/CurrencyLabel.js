@@ -29,4 +29,4 @@ const CurrencyLabel  = ({icon, currency, code}) => {
     )
 }
 
-export default HeaderBar;
+export default CurrencyLabel;
