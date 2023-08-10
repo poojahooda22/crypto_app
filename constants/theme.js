@@ -1,6 +1,7 @@
 import { Dimensions } from "react-native";
 const { width, height } = Dimensions.get("window");
 
+
 export const COLORS = {
     primary: "#7F5DF0",     // Light purple
     secondary: "#5D2DFD",   // Dark purple
@@ -36,7 +37,7 @@ export const SIZES = {
     height
 };
 export const FONTS = {
-    h1: { fontFamily: "Roboto-Black", fontSize: SIZES.h1, lineHeight: 36 },
+    h1: { fontFamily: "Roboto Black", fontSize: SIZES.h1, lineHeight: 36 },
     h2: { fontFamily: "Roboto-Bold", fontSize: SIZES.h2, lineHeight: 30 },
     h3: { fontFamily: "Roboto-Bold", fontSize: SIZES.h3, lineHeight: 22 },
     h4: { fontFamily: "Roboto-Bold", fontSize: SIZES.h4, lineHeight: 22 },
