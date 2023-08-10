@@ -73,11 +73,8 @@ const TransactionHistory = ({customContainerStyle, history}) => {
                         </View>
                     )
                 }}
-
             >
-
             </FlatList>
-
         </View>
     )
 }
