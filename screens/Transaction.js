@@ -10,6 +10,7 @@ import {
 import {HeaderBar, CurrencyLabel, TextButton, TransactionHistory} from '../components';
 
 import {dummyData, COLORS, SIZES, FONTS, icons} from '../constants';
+import {VictoryCustomTheme} from '../styles';
 
 const Transaction = ({route}) => {
 
@@ -18,8 +19,9 @@ const Transaction = ({route}) => {
     React.useEffect(() => {
         const {currency} = route.params;
         setSelectedCurrency(currency)
-
     })
+
+
     function renderTrade() {
         return (
             <View
@@ -70,7 +72,7 @@ const Transaction = ({route}) => {
                 customContainerStyle={{
                     ...styles.Shadow
                 }}
-                history={selectedCurrency?.transaactionHistory}
+                history={selectedCurrency?.transactionHistory}
             />
         )
     }
