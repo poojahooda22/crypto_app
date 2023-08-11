@@ -5,12 +5,17 @@ import {
     Text,
     TouchableOpacity,
     ImageBackground,
-    LogBox
+    LogBox,
+    FlatList, 
+    ScrollView,
+    Image
 } from 'react-native';
 
 import {dummyData, COLORS, SIZES, FONTS, icons, images} from '../constants';
 import { PriceAlert, TransactionHistory } from '../components';
 import { transactionHistory } from '../constants/dummy';
+import {VictoryCustomTheme} from '../styles';
+
 
 
 const Home = ({ navigation }) => {
@@ -40,7 +45,7 @@ const Home = ({ navigation }) => {
                 onPress = {() => navigation.navigate('CryptoDetail', {currency: item})}
             >
                     {/*Currency */}
-                    <View style={{flexDirections: 'row'}}>
+                    <View style={{flexDirection: 'row'}}>
                         <View>
                             <Image
                                 source={item.image}
@@ -151,11 +156,9 @@ const Home = ({ navigation }) => {
                                 keyExtractor={item => '${item.id}'}
                                 Horizontal
                                 showsHorizontalScrollIndicator={false}>
-
                             </FlatList>
                     </View>
                 </ImageBackground>
-
             </View>
         )
     }
@@ -201,7 +204,7 @@ const Home = ({ navigation }) => {
         return (
             <TransactionHistory
                 customContainerStyle = {{...styles.shadow}}
-                histoty={transactionHistory}
+                history={transactionHistory}
             />
         )
     }
